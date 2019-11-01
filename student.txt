@@ -1,0 +1,4 @@
+Student Name: Sander Nederstigt
+Student Number: 577208
+Student Class: HAINFV1SC
+Github repository URL: https://github.com/Thesannio123SanderNederstigt/Webmarkup-assesment.git
