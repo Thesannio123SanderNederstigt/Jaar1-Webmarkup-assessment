@@ -1,0 +1,31 @@
+*
+{
+    background-color: #000000;
+}
+
+body
+{
+    background-color: #2699FB;
+
+}
+#allcolors-and-fonts
+{
+    background-color: #000000;
+    background-color: #444444;
+    background-color: #707070;
+    background-color: #AAAAAA;
+    background-color: #F5F5F5;
+    background-color: #FFFFFF;
+    background-color: #2699FB;
+
+    font-family: Arial;
+    font-size: 80pt;
+    font-size: 63pt;
+    font-size: 35pt;
+    font-size: 30pt;
+    font-size: 25pt;
+    font-size: 15pt;
+
+    font-family: Berlin Sans FB;
+    font-size: 80pt;
+}
