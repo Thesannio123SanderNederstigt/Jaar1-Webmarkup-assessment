@@ -1,3 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-/*site navigation (#) parameters like #maincontent or click on a href="#maincontent" or href="#id"*/
-<urlset xlms="""?>
+
+<urlset xlms="http://teakwon.eu">
+
+    <url>
+
+        <loc>http://www.taekwon.nl/taekwondo/</loc>
+
+        <lastmod>2019-11-10</lastmod>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.8</priority>
+
+    </url>
+
+</urlset>

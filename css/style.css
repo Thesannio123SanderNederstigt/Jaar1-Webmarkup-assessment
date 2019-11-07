@@ -1,13 +1,135 @@
 *
 {
-    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 body
 {
-    background-color: #2699FB;
+    margin: 0px auto;
+    max-width: 1920px;
+    height: 1000px;
+    font-size: 15pt;
+    background-color: #FFFFFF;
+}
+
+#Grid-container
+{
+    background-color: #F5F5F5;
+    height: 100%;
+    /*border: 1.5em solid #00F;
+    padding: 10px;*/ /*ruimte tussen de binnenkant van de border en de rest van de grid areas*/
+    /*display: grid;
+    grid-gap: 5px 10px;
+    grid-template-areas:
+
+            'headerTag headerTag'
+            'navTag navTag'
+            'section1Tag asideTag';*/
+}
+
+#First-header
+{
 
 }
+
+.knoppen
+{
+    border: 2px solid #2699FB;
+    /*hier een standaard height, width (%) en border-radius voor knoppen in links naar sportclub
+      websites, de verzendknop in het contactformulier, en de knop in de cookie-banner*/
+}
+
+.cookieknoppen
+{
+    margin-top: 1%;
+    margin-left: 1%;
+    background-color: #2699FB;
+    border-radius: 1em 1em;
+    color: white;
+    padding: 1%;
+    text-align: center;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#accepteerknop:hover
+{
+    background-color: #0DAF12;
+}
+
+#afwijsknop:hover
+{
+    background-color: #A3131A;
+}
+
+
+.cookieknoppen:active{
+    display: none;
+}
+
+.sportclubcontainer
+{
+    /*dezelfde eigenschappen voor alle blokken met de 10 links naar sportclubs (in 5 rijen van 2 kolommen)
+      waarbinnen straks een image en daaronder tekst komt te staan
+      hierbinnen dus de width, height, border, border-radius (nog meeste vierkant) background-color,
+      text-align, etc straks definiëren.*/
+}
+
+#hide-cookiebanner:focus + section#cookie-banner {
+    display: none;
+}
+
+#form-fieldset
+{
+
+}
+
+#form-legend
+{
+    border: 0.05em solid #000000;
+}
+
+#Last-footer
+{
+
+}
+
+#cookie-banner
+{
+    max-width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #444444;
+    z-index: 2;
+    /*height: 8%;
+    float: bottom;
+    clear: both;*/
+    /*display: block;*/
+}
+
+#cookie-banner > p
+{
+    /*width:20%;*/
+    color: #F5F5F5;
+    font-family: Arial,Berlin Sans FB,Verdana,sans-serif; /*font family with 2 or 3 fallback fonts?*/
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-left: 30%;
+    float: left;
+    display: inline;
+}
+
+#cookie-banner:active
+{
+    display: none;
+}
+
 #allcolors-and-fonts
 {
     background-color: #000000;
@@ -28,4 +150,97 @@ body
 
     font-family: Berlin Sans FB;
     font-size: 80pt;
+
+    /*Other properties that have to be used for sufficient or excellent grading*/
+
+    /*A cookie statement/banner*/
+
+    /*excellent in group one (design, code & semantic)*/
+    /*float: (top, right, bottom, left, inherit, etc.);
+      position: relative; absolute; fixed; (not static?)
+
+      media queries (media query techniques for delivering a tailored stylesheet to different devices:
+      @media (screen) and usage references:
+      https://www.w3schools.com/css/css3_mediaqueries.asp
+      https://www.w3schools.com/css/css3_mediaqueries_ex.asp
+      https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
+
+      A horizontal menu with unordered list tags for PC and tablet layout
+
+      A hamburger menu for mobile layout The menu has an overlay with a link to the other pages (in
+      this case I'm assuming the other SECTIONS (#) of this one-pager?
+
+      Uses a grid system (or flex box) or both techniques
+
+      The website is fully responsive and acts differently on PC, mobile and tablet
+       responsive:(see pptx from lecture 4 (from slide 9 onward)
+       acts differently: (see pptx form lecture 6 (from slide 64 and before (a couple slides back)
+
+    */
+
+    /*sufficient in group two (media, colors & fonts)*/
+
+    /*all colors, media styles, transformations & font styles have to be defined in the stylesheet
+
+    the background video is centered, muted, starts automatically, and the controls are hidden
+
+    Has at least 3 font sizes and "fallback" fonts and 7 hexadecimal colors
+
+    All images used are either .png or .svg format
+
+    I have to use the alt and title attributes in the right way on ALL pictures/images
+
+    */
+
+    /*excellent in group two*/
+
+    /*has a favicon that supports different sizes for windows, Mac and IOS
+
+      All images are using different resolution sizes on PC tablet and mobile
+      depending on the screen resolution (PC = high, tablet = middle and mobile = low)
+      Again, see pptx from lecture 6 on slide 64 and a bit before that
+
+      Only uses em or % after the initial sizes are determined/set in the body initialisation
+
+      The website name in the header is created using a local or external font (or by using a svg)
+
+      */
+
+    /*sufficient in group three (user and SEO support)*/
+
+    /*has language support, the description, author and keywords defined as meta data
+      has a utf-8 charset meta tag defined, the head and body are used in the right way
+      is an html5 document and has the right .html and .css extensions and the html file is named index.html
+      and tabs (waterval methode) is used to level the source code (inspringen van de code dus)
+
+      has a header 1 and 2 to distinguish importance between these headers on my landing page
+      has a DOM with 5 level elements (I guess, because a browser technically has it right?)
+      has a reference to the sitemap.xml (yes in both my index.html and robots.txt file)
+      has attribute description with a subject from the web page and between 7 and 12 keywords
+      has html character entities like &copy; in the footer.
+      has id's only used ones and has the HTML and CSS files validated by the respected w3c online validators
+      has external font files in the /fonts folder, images in the /img, and the stylesheet in the /css folder (all lower case naming!)
+      has comments in the CSS file (like this one) and in the html file (<!--- [comment] -->)
+
+    */
+
+    /*excellent in group three*/
+
+    /*
+      has a sitemap with a montly refresh (<changefreq>monthly</changefreq>)
+      see https://www.sitemaps.org/protocol.html
+      and http://www.advancedhtml.co.uk/robots-sitemaps.htm#sitemaplinking
+
+      has User-agent * & Disallow: /forbidden/ in the robots.txt file (check)
+      has a /forbidden folder with a secret.txt file with my student number in it (check)
+
+      is using CSS combinators "selecting by" like:
+      (semicolon? => ;), comma (,) smaller than (>), plus (+), or tilde (~)
+
+      is using at least 2 pseudo-classes (see https://devoloper.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes )
+
+      is using elements supported by HTML5
+
+    */
+
 }
