@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 
-<html lang="en-NL">
+<html lang="en-NL"> <!-- of moet ik dit nog veranderen in nl-NL ? -->
 
   <!--Head [for SEO bots (here's looking at you Google) and web browsers] -->
 
   <head>
 
     <title>Taekwon.eu</title>
-
+                                <!--ik hoop dat dit hieronder niet als inline style telt...-->
     <link rel="icon" href="img/fav/favicon.svg" sizes="16x16" type="image/svg" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     <!-- wacht, dus deze twee onderstaande links zijn NIET nodig? -->
 
@@ -18,11 +18,12 @@
     <link rel="search" type="text/xml" href="sitemap.xml" />
 
     <!-- metadata -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="click bait -ish words here related to Haarlem Noord en taekwondo" />
+    <meta name="description" content="click bait -ish words here related to Haarlem-Noord en taekwondo" />
     <meta name="author" content="Sander Nederstigt" />
-    <meta name="keywords" content="Nederland, Haarlem, Haarlem-Noord, toerisme, attracties, sportclubs, vechtsport, taekwondo, teakwon.nl, Inholland" />
-    <!-- other potential tags: html5, css3, header, footer, section, article, aside -->
+    <meta name="keywords" content="Nederland, Haarlem, Haarlem-Noord, vechtsport, taekwondo, taekwon.nl, sportclubs, shops, attracties, sportclubs, Inholland" />
+    <!-- other potential tags: html5, css3, header, footer, section, article, aside, Contact, social_media -->
 
     <meta charset="UTF-8">
 
@@ -30,34 +31,52 @@
 
   <body>
 
+    <video autoplay muted loop id="backvideo" >
+      <source src="video/taekwondo.mp4" type="video/mp4">
+      Uw browser ondersteund deze video niet.
+    </video>
+
     <section id="Grid-container">
 
       <!-- the page header -->
       <header id="First-header">
 
-        <h1>The Title</h1>
+        <h1>Welkom op Taekwon.eu!</h1>
 
-        <h2>The payoff</h2>
+        <h2>(vecht)sport, recreatie en meer in Haarlem-Noord!</h2>
+        <!--Vechtsport en meer in Haarlem-Noord (Neerslaan in Nederland!) -->
+
+        <!-- the navigation bar -->
+        <nav id="Navigation-bar">
+
+          <ul>
+
+            <a href="#maincontent"><li class="navlist">Haarlem</li></a>
+
+            <a href="#secondarycontent"><li class="navlist">Haarlem-Noord</li></a>
+
+            <a href="#sportcontent"><li class="navlist">Sport</li></a>
+
+            <a href="#referalcontent"><li class="navlist">Verwijzing</li></a>
+
+            <!-- Creating a horizontal list menu;
+            With tags referring to index with an id attribute to link to the main,
+            secondary, sport and contact content (a href="#main/secondary/sport/contact content)
+
+            <li>More list items here to accommodate all of those mandatory content links to main, sec, sport and contact content sections on this one-pager</li>
+            -->
+          </ul>
+
+        </nav>
 
       </header>
 
-      <!-- the navigation bar -->
-      <nav id="Navigation-bar">
-
-        <ul>
-
-          <a href="#main-header"><li>Creating a horizontal list menu</li></a>
-
-          <a href="#secondary-header"><li>With tags referring to index with an id attribute to link to the main, secondary, sport and contact content (a href="#main/secondary/sport/contact content)"</li></a>
-
-          <li>More list items here to accommodate all of those mandatory content links to main, sec, sport and contact content sections on this one-pager</li>
-
-        </ul>
-
-      </nav>
-
       <!-- start of main content -->
       <header class="Main" id="Main-header">
+
+        <a name="maincontent"></a>
+
+        <p class="headertekst">Haarlem</p>
 
       </header>
 
@@ -79,71 +98,92 @@
       </article>
 
       <footer class="Main" id="Main-footer">
-
+        <p>De hoofdzakelijke inhoud footer</p>
       </footer>
 
       <!--start of secondary content -->
-      <header id="Secondary-header">
+      <header class="Second" id="Secondary-header">
 
+        <a name="secondarycontent"></a>
+
+        <p class="headertekst">Haarlem-Noord</p>
 
       </header>
 
-      <section id="Secondary-section">
+      <section class="Second" id="Secondary-section">
 
         <p>A description about the neighbourhood and what shops, companies or touristic attractions I can find in a total of 350 words.</p>
 
       </section>
 
-      <article id="Secondary-article">
+      <article class="Second" id="Secondary-article">
 
-        <img src="I-have-to-use-2-royalty-free-images" alt="">
+        <p>De tweede inhoud artikel </p>
 
-        <img src="As-well-as-a-royalty-free-video-(I-should-probably-Google-that)" alt="">
+        <img src="I-have-to-use-2-royalty-free-images" title="" alt="">
+
+        <img src="As-well-as-a-royalty-free-video-(I-should-probably-Google-that)" title="" alt="">
 
       </article>
 
-      <footer id="Secondary-footer">
+      <footer class="Second" id="Secondary-footer">
+
+        <p>De tweede inhoud footer</p>
 
       </footer>
 
       <!-- start of sport content -->
-      <header id="Sport-header">
+      <header class="Sport" id="Sport-header">
 
+        <a name="sportcontent"></a>
+
+        <p class="headertekst">De sport inhoud header</p>
 
       </header>
 
-      <section id="Sport-section">
+      <section class="Sport" id="Sport-section">
 
+        <p>De sport sectie met tekst over de vechtsport Taekwondo (dat daar de nadruk op ligt)</p>
 
       </section>
 
-      <article id="Sport-article">
+      <section id="Sport-articlespaceleft"></section>
 
+      <article class="Sport" id="Sport-article">
+
+        <p>Het sport artikel met tekst voor boven de tien plaatjes/links als: "Ondanks onze focus op de vechtsport Taekwondo zijn er nog meer sporten/sportclubs die worden beofend in en rondom Haarlem-Noord"</p>
 
       </article>
 
-      <footer id="Sport-footer">
+      <section id="Sport-articlespaceright"></section>
 
+      <footer class="Sport" id="Sport-footer">
+
+        <p>De sport inhoud footer</p>
 
       </footer>
 
       <!-- start of referral content -->
-      <header id="Referral-header">
+      <header class="Referral" id="Referral-header">
 
+        <a name="referalcontent"></a>
+
+        <p class="headertekst">Sociale media</p>
 
       </header>
 
-      <aside id="Referral-aside">
+      <aside class="Referral" id="Referral-aside">
 
 
         <a href="website-sportclubs-dit-keer-tien">Een aparte link voor elke sportclub over een afbeelding geplaatst? Blijkbaar ja</a>
 
-        <button id="hide-cookiebanner">Cookie banner uitschakelen</button>
+
 
       </aside>
 
-      <footer id="Referral-footer">
+      <footer class="Referral" id="Referral-footer">
 
+        <p>De verwijzing footer</p>
 
       </footer>
 
@@ -154,7 +194,7 @@
 
           <fieldset id="form-fieldset">
 
-            <legend id="form-legend">Contact Formulier</legend>
+            <legend id="form-legend">Contact (Formulier)</legend>
 
             <p>Visitor name:</p>
 
@@ -166,9 +206,9 @@
 
             <p>visitor message:</p>
 
-            <input type="text" name="message">
+            <input type="text" name="message" id="Bericht-invoerveld">
 
-            <input type="button" value="Verzenden" id="Send-button">
+            <input type="button" value="Verzenden"  class="knoppen" id="Send-button">
 
           </fieldset>
 
@@ -179,17 +219,18 @@
       <!-- the page footer -->
       <footer id="Last-footer">
 
-        <p>Gemaakt door Sander Nederstigt (577208) &copy; Inholland 2019 Alle rechten voorbehouden.</p>
+        <p>Gemaakt door Sander Nederstigt (577208) &copy; Inholland 2019 alle rechten voorbehouden.</p>
 
       </footer>
 
-      <!--
-      <video tabindex="-1" class="video-stream html5-main-video" style="left: 0px; top: 0px; width: 853px; height: 480px;" src="blob:https://www.youtube.com/44a851d4-1e00-43f6-a14a-5514fe8a0fc4" controlslist="nodownload"></video>
-       -->
-      <!-- <button class="knoppen cookieknoppen">Accepteren</button> je kan op deze manier meerdere klassen gebruiken! -->
+
+
+
    </section>
 
-    <section id="cookie-banner">
+    <button id="hide-cookiebanner">Cookie banner uitschakelen</button>
+
+    <section class="cookie" id="cookie-banner">
 
       <p>Deze website maakt gebruik van cookies om uw gebruikservaring te kunnen verbeteren</p>
 

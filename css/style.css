@@ -7,7 +7,7 @@
 
 body
 {
-    margin: 0px auto;
+    margin: 0 auto;
     max-width: 1920px;
     height: 1000px;
     font-size: 15pt;
@@ -16,27 +16,279 @@ body
 
 #Grid-container
 {
-    background-color: #F5F5F5;
-    height: 100%;
-    /*border: 1.5em solid #00F;
-    padding: 10px;*/ /*ruimte tussen de binnenkant van de border en de rest van de grid areas*/
-    /*display: grid;
-    grid-gap: 5px 10px;
-    grid-template-areas:
+    /*background-color: #F5F5F5;*/
+    border: 0.5em solid #707070; /*Deze uiteindelijk uit! = verwijderd dus!*/
+    position: relative;
+    padding: 0.66em; /*ruimte tussen de binnenkant van de border en de rest van de grid areas*/
+    display: grid;
+    grid-gap: 1em 0.2em;
+    justify-content: center;
+    grid-template-columns: 25% auto auto 25%;
 
-            'headerTag headerTag'
-            'navTag navTag'
-            'section1Tag asideTag';*/
+              /*#kolom1      #kolom2        #kolom3        #kolom4*/
+
+              /*'FirstheaderTag FirstheaderTag FirstheaderTag FirstheaderTag'
+              'FirstheaderTag FirstheaderTag FirstheaderTag FirstheaderTag'
+              'MainheaderTag  MainheaderTag  MainheaderTag  MainheaderTag'
+              'MainsectionTag MainsectionTag MainsectionTag MainsectionTag'
+              'MainarticleTag MainarticleTag MainarticleTag MainarticleTag'
+              ''
+              'section1Tag asideTag';*/
+
+    /*height: 100%; is vier kolommen genoeg?*/
 }
 
 #First-header
 {
+    background-color: #AAAAAA;
+    border: 0.2em solid #000000;
+    border-radius: 1em 1em;
+    text-align:center;
+    text-shadow: 0.05em 0.15em 0.1em #707070;
+    box-shadow: 0.05em 0.1em 0.3em #000000BF;
+    position: relative; /*Volgens mij was dit al zo...*/
+    /*padding-bottom: 0%;
+    height: 200%; verwijderen?*/
+    background-image: linear-gradient(to top, #707070, #F5F5F5);
+    grid-area: 1 / 1 / span 1 / span 4;
+}
 
+@font-face
+{
+    font-family: 'YeonSung';
+    src: url('../fonts/YeonSung-Regular.ttf') format('truetype');
+}
+
+#First-header > h1
+{
+    color: #000000;
+    font-family: 'YeonSung', Berlin Sans FB, sans-serif; /*HIER een extern font voor gebruiken!*/
+    font-size: 2.5em;
+    font-weight: bold; /*Ik weet vrij zeker dat dit niets veranderd omdat dit al zo was...*/
+}
+
+#First-header > h2
+{
+    color: #000000;
+    font-family: Arial, Berlin Sans FB, sans-serif;
+    font-size: 1em;
+}
+
+#Navigation-bar
+{
+    background-color: #444444;
+    border: 0.1em solid #000000;
+    border-radius: 0 0 1em 1em;
+    height: 2em;
+    margin: 2% -0.2% -0.3% -0.2%;
+    grid-area: 2 / 1 / span 1 / span 4;
+}
+
+ul
+{
+    margin-left: 36%;
+    list-style-type: none;
+}
+
+.navlist
+{
+    margin-left: 2%;
+    padding: 0.7%;
+    float: left;
+    color: #FFFFFF;
+}
+
+.navlist:hover
+{
+    background-color: #2699FB;
+    color: #000000;
+}
+
+.headertekst
+{
+    color: #2699FB;
+    font-family: Berlin Sans FB, Arial, sans-serif;
+    font-size: 1.8em;
+}
+
+.Main
+{
+    background-color: #707070;
+    border: 0.1em solid #000000;
+    border-radius: 1em 1em;
+    text-align: center;
+}
+
+#Main-header
+{
+    color: #2699FB;
+    font-family: Berlin Sans FB, Arial, sans-serif;
+    font-size: 1.5em;
+    padding-top: 0.4%;
+    grid-area: 3 / 1 / span 5 / span 4;
+}
+
+#Main-section
+{
+    grid-area: 21 / 1 / span 1 / span 4;
+}
+
+#Main-article
+{
+    grid-area: 22 / 1 / span 1 / span 4;
+}
+
+#Main-footer
+{
+    grid-area: 24 / 1 / span 1 / span 4;
+}
+
+.Second
+{
+    background-color: #AAAAAA;
+    border: 0.33em solid #000000;
+    text-align: center;
+}
+
+#Secondary-header
+{
+    grid-area: 26 / 1 / span 1 / span 4;
+}
+
+#Secondary-section
+{
+    grid-area: 27 / 1 / span 1 / span 4;
+}
+
+#Secondary-article
+{
+    grid-area: 28 / 1 / span 1 / span 4;
+}
+
+#Secondary-footer
+{
+    grid-area: 30 / 1 / span 1 / span 4;
+}
+
+.Sport
+{
+    background-color: #707070;
+    border: 0.33em solid #000000;
+    text-align: center;
+}
+
+#Sport-header
+{
+    grid-area: 32 / 1 / span 1 / span 4;
+}
+
+#Sport-section
+{
+    grid-area: 33 / 1 / span 1 / span 4;
+}
+
+#Sport-article
+{
+    grid-area: 34 / 2 / span 3 / span 2;/*Deze splitten in een 1 en twee voor de twee plaatjes in 5 kolommen!*/
+}
+
+#Sport-articlespaceleft
+{
+    grid-area: 34 / 1 / span 3 / span 1;
+}
+
+#Sport-articlespacright
+{
+    grid-area: 34 / 4 / span 3 / span 1;
+}
+
+#Sport-footer
+{
+    grid-area: 37 / 1 / span 1 / span 4;
+}
+
+.sportclubcontainer
+{
+    /*dezelfde eigenschappen voor alle blokken met de 10 links naar sportclubs (in 5 rijen van 2 kolommen)
+      waarbinnen straks een image en daaronder tekst komt te staan
+      hierbinnen dus de width, height, border, border-radius (nog meeste vierkant) background-color,
+      text-align, etc straks definiëren.*/
+}
+
+.Referral
+{
+    background-color: #444444;
+    border: 0.33em solid #000000;
+    text-align: center;
+}
+
+#Referral-header
+{
+    grid-area: 45 / 4 / span 1 / span 1;
+}
+
+#Referral-aside
+{
+    grid-area: 46 / 4 / span 1 / span 1;
+}
+
+#Referral-footer
+{
+    grid-area: 47 / 4 / span 1 / span 1;
+}
+
+#Contact-section
+{
+    background-color: #AAAAAA;
+    border: 0.33em solid #000000;
+    text-align: center;
+    grid-area: 45 / 1 / span 3 / span 3;
+}
+
+#form-fieldset
+{
+
+}
+
+#form-legend
+{
+    /*border: 0.05em solid #000000;*/
+    /*border-width: 0.2em;
+    border-style: groove;
+    border-color: threedface;
+    border-image: initial;*/
+}
+
+#Send-button
+{
+
+}
+
+#Bericht-invoerveld
+{
+    margin-left: 5.5em;
+}
+
+#Last-footer
+{
+    background-color: #AAAAAA;
+    border: 0.2em solid #000000;
+    border-radius: 1em 1em;
+    text-align: center;
+    padding-top: 0.6%;
+    text-shadow: 0.05em 0.15em 0.1em #707070;
+    box-shadow: 0.05em 0.1em 0.3em #000000BF;
+    position: relative;
+    font-family: Berlin Sans FB, Arial, sans-serif;
+    font-weight: bold;
+    background-image: linear-gradient(to top, #707070, #F5F5F5);
+    grid-area: 50 / 1 / span 4 / span 4;
 }
 
 .knoppen
 {
-    border: 2px solid #2699FB;
+    background-color: #2699FB;
+    border: 0.2em solid #2699FB;
     /*hier een standaard height, width (%) en border-radius voor knoppen in links naar sportclub
       websites, de verzendknop in het contactformulier, en de knop in de cookie-banner*/
 }
@@ -47,7 +299,7 @@ body
     margin-left: 1%;
     background-color: #2699FB;
     border-radius: 1em 1em;
-    color: white;
+    color: #FFFFFF;
     padding: 1%;
     text-align: center;
     font-size: 1em;
@@ -64,36 +316,22 @@ body
     background-color: #A3131A;
 }
 
-
-.cookieknoppen:active{
-    display: none;
-}
-
-.sportclubcontainer
+#hide-cookiebanner
 {
-    /*dezelfde eigenschappen voor alle blokken met de 10 links naar sportclubs (in 5 rijen van 2 kolommen)
-      waarbinnen straks een image en daaronder tekst komt te staan
-      hierbinnen dus de width, height, border, border-radius (nog meeste vierkant) background-color,
-      text-align, etc straks definiëren.*/
+    margin-top: -9.8%;
+    margin-right: 6%;
+    float: right;
+    border-radius: 1em 1em;
+    color: white;
+    background-color: #2699FB;
+    padding: 0.5%;
+    text-align: center;
+    font-size: 1em;
+    cursor: pointer;
 }
 
 #hide-cookiebanner:focus + section#cookie-banner {
     display: none;
-}
-
-#form-fieldset
-{
-
-}
-
-#form-legend
-{
-    border: 0.05em solid #000000;
-}
-
-#Last-footer
-{
-
 }
 
 #cookie-banner
@@ -122,12 +360,21 @@ body
     margin-bottom: 2%;
     padding-left: 30%;
     float: left;
-    display: inline;
+    /*display: inline;*/
 }
 
 #cookie-banner:active
 {
     display: none;
+}
+
+#backvideo
+{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 #allcolors-and-fonts
