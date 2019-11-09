@@ -69,7 +69,6 @@ body
     margin-top: 0.5%;
     position: absolute;
     border-radius: 1em 1em;
-
 }
 
 @font-face
@@ -128,6 +127,7 @@ ul
     color: #2699FB;
     font-family: Berlin Sans FB, Arial, sans-serif;
     font-size: 1.8em;
+    -webkit-text-stroke: 0.05em #000000;
 }
 
 .Main
@@ -140,7 +140,7 @@ ul
 
 #Main-header
 {
-    color: #2699FB;
+    background-image: linear-gradient(to top, #707070, #AAAAAA);
     font-family: Berlin Sans FB, Arial, sans-serif;
     font-size: 1.5em;
     padding-top: 0.4%;
@@ -149,28 +149,64 @@ ul
 
 #Main-section
 {
-    grid-area: 21 / 1 / span 1 / span 4;
+    border-radius: 1em 1em;
+    text-align: center;
+    grid-area: 9 / 1 / span 10 / span 4;
+}
+
+.Mainimages
+{
+    /*margin-top: 0.5%;*/
+}
+
+#Mainimageleft
+{
+    width: 25em;
+    margin-left: -34em;
+    border-radius: 1em 1em;
+}
+
+#Mainimageright
+{
+    width: 23em;
+    margin-left: 7em;
+    margin-right: -33em;
+    margin-top: 0.5%;
+    border-radius: 1em 1em;
 }
 
 #Main-article
 {
-    grid-area: 22 / 1 / span 1 / span 4;
+    color: #FFFFFF;
+    padding-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-family: Arial, sans-serif;
+    grid-area: 19 / 1 / span 1 / span 4;
+}
+
+#par2
+{
+    margin-top: 2%;
+    margin-bottom: 1%;
 }
 
 #Main-footer
 {
-    grid-area: 24 / 1 / span 1 / span 4;
+    grid-area: 24 / 1 / span 2 / span 4;
 }
 
 .Second
 {
-    background-color: #AAAAAA;
-    border: 0.33em solid #000000;
+    background-image: linear-gradient(to top, #AAAAAA, #F5F5F5);
+    border: 0.1em solid #000000;
+    border-radius: 1em 1em;
     text-align: center;
 }
 
 #Secondary-header
 {
+    background-image: linear-gradient(to top, #AAAAAA, #F5F5F5);
     grid-area: 26 / 1 / span 1 / span 4;
 }
 
@@ -192,7 +228,8 @@ ul
 .Sport
 {
     background-color: #707070;
-    border: 0.33em solid #000000;
+    border: 0.1em solid #000000;
+    border-radius: 1em 1em;
     text-align: center;
 }
 
@@ -237,7 +274,8 @@ ul
 .Referral
 {
     background-color: #444444;
-    border: 0.33em solid #000000;
+    border: 0.1em solid #000000;
+    border-radius: 1em 1em;
     text-align: center;
 }
 
@@ -259,7 +297,8 @@ ul
 #Contact-section
 {
     background-color: #AAAAAA;
-    border: 0.33em solid #000000;
+    border: 0.1em solid #000000;
+    border-radius: 1em 1em;
     text-align: center;
     grid-area: 45 / 1 / span 3 / span 3;
 }
