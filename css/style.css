@@ -157,13 +157,13 @@ ul
 .Mainimages
 {
     /*margin-top: 0.5%;*/
+    border-radius: 1em 1em;
 }
 
 #Mainimageleft
 {
     width: 25em;
     margin-left: -34em;
-    border-radius: 1em 1em;
 }
 
 #Mainimageright
@@ -172,7 +172,6 @@ ul
     margin-left: 7em;
     margin-right: -33em;
     margin-top: 0.5%;
-    border-radius: 1em 1em;
 }
 
 #Main-article
@@ -193,13 +192,15 @@ ul
 
 #Main-footer
 {
-    grid-area: 24 / 1 / span 2 / span 4;
+    border-radius: 1em 1em;
+    text-align: center;
+    grid-area: 20 / 1 / span 2 / span 4;
 }
 
 .Second
 {
-    background-image: linear-gradient(to top, #AAAAAA, #F5F5F5);
-    border: 0.1em solid #000000;
+    background-color: #AAAAAA;
+    border: 0.15em solid #000000;
     border-radius: 1em 1em;
     text-align: center;
 }
@@ -207,22 +208,50 @@ ul
 #Secondary-header
 {
     background-image: linear-gradient(to top, #AAAAAA, #F5F5F5);
-    grid-area: 26 / 1 / span 1 / span 4;
+    grid-area: 22 / 1 / span 5 / span 4;
+}
+
+#secheadp
+{
+    font-size: 2.5em;
+    padding-top: 0.2em;
 }
 
 #Secondary-section
 {
-    grid-area: 27 / 1 / span 1 / span 4;
+    border-radius: 1em 1em;
+    text-align: center;
+    grid-area: 28 / 1 / span 1 / span 4;
+}
+
+.Secimages
+{
+    /*margin-top: 0.5%;*/
+    border-radius: 1em 1em;
+}
+
+#Secimageleft
+{
+    width: 24.2em;
+    margin-left: -34em;
+}
+
+#Secimageright
+{
+    width: 24em;
+    margin-left: 7em;
+    margin-right: -33em;
+    margin-top: 0.5%;
 }
 
 #Secondary-article
 {
-    grid-area: 28 / 1 / span 1 / span 4;
+    grid-area: 35 / 1 / span 1 / span 4;
 }
 
 #Secondary-footer
 {
-    grid-area: 30 / 1 / span 1 / span 4;
+    grid-area: 36 / 1 / span 1 / span 4;
 }
 
 .Sport
@@ -235,32 +264,40 @@ ul
 
 #Sport-header
 {
-    grid-area: 32 / 1 / span 1 / span 4;
+    grid-area: 37 / 1 / span 1 / span 4;
 }
 
 #Sport-section
 {
-    grid-area: 33 / 1 / span 1 / span 4;
+    grid-area: 39 / 1 / span 1 / span 4;
 }
 
 #Sport-article
 {
-    grid-area: 34 / 2 / span 3 / span 2;/*Deze splitten in een 1 en twee voor de twee plaatjes in 5 kolommen!*/
+    grid-area: 40 / 2 / span 3 / span 2;/*Deze splitten in een 1 en twee voor de twee plaatjes in 5 kolommen!*/
+}
+
+.Sportarticlelistspace
+{
+    width: 50%;
+    height: 50em;
+    text-align: left;
+    position: relative;
 }
 
 #Sport-articlespaceleft
 {
-    grid-area: 34 / 1 / span 3 / span 1;
+    float: left;
 }
 
-#Sport-articlespacright
+#Sport-articlespaceright
 {
-    grid-area: 34 / 4 / span 3 / span 1;
+    float: right;
 }
 
 #Sport-footer
 {
-    grid-area: 37 / 1 / span 1 / span 4;
+    grid-area: 43 / 1 / span 1 / span 4;
 }
 
 .sportclubcontainer
@@ -409,16 +446,14 @@ ul
 
 #cookie-banner > p
 {
-    /*width:20%;*/
     color: #F5F5F5;
-    font-family: Arial,Berlin Sans FB,Verdana,sans-serif; /*font family with 2 or 3 fallback fonts?*/
+    font-family: Arial,Berlin Sans FB,Verdana,sans-serif; /*font family with 3 fallback fonts?*/
     font-size: 0.9em;
-    text-align: center;
+    text-align: left;
     margin-top: 2%;
     margin-bottom: 2%;
-    padding-left: 30%;
+    padding-left: 12%;
     float: left;
-    /*display: inline;*/
 }
 
 #cookie-banner:active
