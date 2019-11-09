@@ -14,10 +14,19 @@ body
     background-color: #FFFFFF;
 }
 
+#backvideo
+{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
 #Grid-container
 {
     /*background-color: #F5F5F5;*/
-    border: 0.5em solid #707070; /*Deze uiteindelijk uit! = verwijderd dus!*/
+    /*border: 0.5em solid #707070;*/ /*Deze uiteindelijk uit! = verwijderd dus!*/
     position: relative;
     padding: 0.66em; /*ruimte tussen de binnenkant van de border en de rest van de grid areas*/
     display: grid;
@@ -51,6 +60,16 @@ body
     height: 200%; verwijderen?*/
     background-image: linear-gradient(to top, #707070, #F5F5F5);
     grid-area: 1 / 1 / span 1 / span 4;
+}
+
+#headerimage
+{
+    width: 5em;
+    margin-left: -19em;
+    margin-top: 0.5%;
+    position: absolute;
+    border-radius: 1em 1em;
+
 }
 
 @font-face
@@ -366,15 +385,6 @@ ul
 #cookie-banner:active
 {
     display: none;
-}
-
-#backvideo
-{
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
 }
 
 #allcolors-and-fonts
