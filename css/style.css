@@ -14,6 +14,11 @@ body
     background-color: #FFFFFF;
 }
 
+.onzichtbaar
+{
+    display: none;
+}
+
 #backvideo
 {
     position: fixed;
@@ -80,7 +85,7 @@ body
 #First-header > h1
 {
     color: #000000;
-    font-family: 'YeonSung', Berlin Sans FB, sans-serif; /*HIER een extern font voor gebruiken!*/
+    font-family: 'YeonSung', 'Berlin Sans FB', sans-serif; /*HIER een extern font voor gebruiken!*/
     font-size: 2.5em;
     font-weight: bold; /*Ik weet vrij zeker dat dit niets veranderd omdat dit al zo was...*/
 }
@@ -88,7 +93,7 @@ body
 #First-header > h2
 {
     color: #000000;
-    font-family: Arial, Berlin Sans FB, sans-serif;
+    font-family: Arial, 'Berlin Sans FB', sans-serif;
     font-size: 1em;
 }
 
@@ -114,6 +119,7 @@ body
     padding: 0.7%;
     float: left;
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 .navlist:hover
@@ -122,10 +128,21 @@ body
     color: #000000;
 }
 
+.anavlist
+{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.anavlist:hover
+{
+    color: #000000;
+}
+
 .headertekst
 {
     color: #2699FB;
-    font-family: Berlin Sans FB, Arial, sans-serif;
+    font-family: 'Berlin Sans FB', Arial, sans-serif;
     font-size: 1.8em;
     -webkit-text-stroke: 0.05em #000000;
     text-align: center;
@@ -142,7 +159,7 @@ body
 #Main-header
 {
     background-image: linear-gradient(to top, #707070, #AAAAAA);
-    font-family: Berlin Sans FB, Arial, sans-serif;
+    font-family: 'Berlin Sans FB', Arial, sans-serif;
     font-size: 1.5em;
     padding-top: 0.4%;
     grid-area: 3 / 1 / span 5 / span 4;
@@ -181,7 +198,7 @@ body
     padding-top: 1em;
     padding-left: 2em;
     padding-right: 2em;
-    font-family: Arial, sans-serif, Berlin Sans FB;
+    font-family: Arial, sans-serif, 'Berlin Sans FB';
     grid-area: 19 / 1 / span 1 / span 4;
 }
 
@@ -251,7 +268,7 @@ body
     padding-top: 1em;
     padding-left: 2em;
     padding-right: 2em;
-    font-family: Arial, sans-serif, Berlin Sans FB;
+    font-family: Arial, sans-serif, 'Berlin Sans FB';
     grid-area: 30 / 1 / span 1 / span 4;
 }
 
@@ -289,7 +306,7 @@ body
 {
     color: #FFFFFF;
     padding: 0.5em 2em;
-    font-family: sans-serif, Arial, Berlin Sans FB;
+    font-family: sans-serif, Arial, 'Berlin Sans FB';
     grid-area: 39 / 1 / span 1 / span 4;
 }
 
@@ -335,7 +352,7 @@ body
 
 .sportclubcontainer > .clubtekst
 {
-    font-family: Arial, sans-serif, Berlin Sans FB;
+    font-family: Arial, sans-serif, 'Berlin Sans FB';
     font-size: 0.8em;
     color: #F5F5F5;
     padding: 0.5em; /*eerst all around, daarna alleen left right en bottom?*/
@@ -365,7 +382,7 @@ body
 
 .sportname
 {
-    font-family: 'YeonSung', Berlin Sans FB, sans-serif;
+    font-family: 'YeonSung', 'Berlin Sans FB', sans-serif;
     font-weight: bold;
 }
 
@@ -388,7 +405,7 @@ body
     border: 0.15em solid #000000;
     border-radius: 1em 1em;
     text-align: center;
-    font-family: Berlin Sans FB, Arial, sans-serif;
+    font-family: 'Berlin Sans FB', Arial, sans-serif;
 }
 
 #Referral-header
@@ -521,7 +538,7 @@ body
 
 #instagramicon
 {
-    margin-top: 0.25em;
+    margin-top: 0.20em;
     margin-left: 0.05em;
     width: 1em;
     font-size: 2em;
@@ -546,7 +563,7 @@ body
 .formtekst
 {
     margin-top: 0.5em;
-    font-family: Arial, sans-serif, Berlin Sans FB;
+    font-family: Arial, sans-serif, 'Berlin Sans FB';
     color: #FFFFFF;
 }
 
@@ -562,8 +579,7 @@ body
 
 #contactp
 {
-    font-size: 1.2em;
-    padding-top: 0.2em;
+    font-size: 2.2em;
 }
 
 #contactp2
@@ -581,7 +597,7 @@ body
     height: 2em;
     padding: 0.5em;
     border-radius: 1em 1em;
-    font-family: Berlin Sans FB, Arial, sans-serif;
+    font-family: 'Berlin Sans FB', Arial, sans-serif;
 }
 
 #form-fieldset
@@ -602,7 +618,7 @@ body
     position: absolute;
     display: block;
     border-radius: 1em 1em;
-    color: white;
+    color: #FFFFFF;
     background-color: #2699FB;
     padding: 0.8%;
     text-align: center;
@@ -625,7 +641,7 @@ body
     text-shadow: 0.05em 0.15em 0.1em #707070;
     box-shadow: 0.05em 0.1em 0.3em #000000BF;
     position: relative;
-    font-family: Berlin Sans FB, Arial, sans-serif;
+    font-family: 'Berlin Sans FB', Arial, sans-serif;
     font-weight: bold;
     background-image: linear-gradient(to top, #707070, #F5F5F5);
     grid-area: 61 / 1 / span 4 / span 4;
@@ -660,7 +676,7 @@ body
     margin-right: 6%;
     float: right;
     border-radius: 1em 1em;
-    color: white;
+    color: #FFFFFF;
     background-color: #2699FB;
     padding: 0.5%;
     text-align: center;
@@ -690,7 +706,7 @@ body
 #cookie-banner > p
 {
     color: #F5F5F5;
-    font-family: Arial,Berlin Sans FB,Verdana,sans-serif; /*font family with 3 fallback fonts?*/
+    font-family: Arial, 'Berlin Sans FB', sans-serif;
     font-size: 0.9em;
     text-align: left;
     margin-top: 2%;
