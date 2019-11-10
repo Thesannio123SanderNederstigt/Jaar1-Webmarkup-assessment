@@ -41,7 +41,7 @@
       <!-- the page header -->
       <header id="First-header">
 
-        <img id="headerimage" src="img/teakwoneulogo.png" title="Taekwon.eu logo" alt="rechtenvrije afbeelding" />
+        <img id="headerimage" src="img/taekwoneulogo.png" title="Taekwon.eu logo" alt="rechtenvrije afbeelding" />
 
         <h1>Welkom op Taekwon.eu!</h1>
 
@@ -59,7 +59,9 @@
 
             <a href="#sportcontent"><li class="navlist">Sport</li></a>
 
-            <a href="#referalcontent"><li class="navlist">Contact &amp; sociale media</li></a>
+            <a href="#contactcontent"><li class="navlist">Contact</li></a>
+
+            <a href="#referalcontent"><li class="navlist">Sociale media</li></a>
 
           </ul>
 
@@ -150,11 +152,11 @@
 
           <section class="sportclubcontainer" id="sport1">
 
-            <p class="sportname">Teakwondo</p>
+            <p class="sportname">Taekwondo</p>
 
             <a href="https://www.taekwondobond.nl/"><img class="sportimages" src="img/taekwondoclub.png" title="" alt="" /></a>
 
-            <p class="clubtekst">De Taekwondo bond Nederland is de overkoepelende organisatie van de sport in Nederland. Op de hoofdlocatie in Haarlem wordt de sport hier dan ook flink beoefend.<a href="#referalcontent" id="clubreferallink"> Ga naar contact voor meer info.</a></p>
+            <p class="clubtekst">De Taekwondo bond Nederland is de overkoepelende organisatie van de sport in Nederland. Op de hoofdlocatie in Haarlem wordt de sport hier dan ook flink beoefend.<a href="#contactcontent" id="clubreferallink"> Ga naar contact voor meer info.</a></p>
 
           </section>
 
@@ -256,7 +258,6 @@
 
       </article>
 
-
       <footer id="Sport-footer">
         <!-- wederom wel gebruikt, maar geen inhoud -->
       </footer>
@@ -266,53 +267,84 @@
 
         <a name="referalcontent"></a>
 
-        <p class="headertekst">Sociale media</p>
+        <p class="headertekst" id="refheadp">Sociale media</p>
 
       </header>
 
       <aside class="Referral" id="Referral-aside">
 
 
-        Volgens mij komt hier een venster (section) met een link naar de website (6.e) en daaronder
-        social media buttons (overgenomen vanuit mijn vorige project die nergens heen leiden?)
+        <a href="https://www.taekwon.nl/taekwondo/" id="refasidep">Bezoek onze andere website</a><p id="socialp">en andere sociale media:</p>
+
+        <section id="socialmedialinks">
+
+          <!-- sociale media icons -->
+
+            <section class="socialicons" id="appiconcolor">
+
+              <img src="img/whatsappicon.svg" id="whatsappicon" title="" alt="" />
+
+            </section>
+
+            <section class="socialicons" id="bookiconcolor">
+
+              <img src="img/facebookicon.svg" id="facebookicon" title="" alt=""/>
+
+            </section>
+
+            <section class="socialicons" id="twittercolor">
+
+              <img src="img/twittericon.svg" id="twittericon" title="" alt=""/>
+
+            </section>
+
+            <section class="socialicons" id="gramcolor">
+
+              <img src="img/instagramicon.svg" id="instagramicon" title="" alt=""/>
+
+            </section>
+
+        </section>
 
 
       </aside>
 
-      <footer class="Referral" id="Referral-footer">
+      <footer id="Referral-footer">
 
-        <p>De verwijzing footer</p>
+        <!-- lege footer -->
 
       </footer>
 
       <!-- start of contact content (mostly the contact form)-->
       <section id="Contact-section">
 
+        <a name="contactcontent"></a>
+
         <form action="http://witan.nl/inholland/testform.php" method="post" id="contact-form">
 
           <fieldset id="form-fieldset">
 
-            <legend class="headertekst" id="form-legend">Contact</legend>
+            <legend class="headertekst" id="form-legend"><p id="contactp">Contact</p></legend>
 
-            <p>Vragen of opmerkingen? Vul dan het onderstaande contactformulier in.</p>
+            <p id="contactp2">Vragen of opmerkingen? Vul dan het onderstaande contactformulier in.</p>
 
-            <p>Visitor name:</p>
+            <p class="formtekst">Uw naam:</p>
 
-            <label>
-              <input type="text" name="name">
-            </label>
 
-            <p>Visitor email:</p>
+              <input type="text" name="name" class="inputtypes">
 
-            <label>
-              <input type="text" name="email">
-            </label>
 
-            <p>visitor message:</p>
+            <p class="formtekst">Uw email adres:</p>
 
-            <input type="text" name="message" id="Bericht-invoerveld">
 
-            <input type="button" value="Verzenden"  class="knoppen" id="Send-button">
+              <input type="text" name="email" class="inputtypes">
+
+
+            <p class="formtekst">Uw bericht:</p>
+
+            <textarea name="message" class="inputtypes" id="Bericht-invoerveld"></textarea>
+
+            <input type="button" value="Verzenden" id="Send-button">
 
           </fieldset>
 
