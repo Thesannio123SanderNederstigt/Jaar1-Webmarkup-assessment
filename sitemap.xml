@@ -18,6 +18,18 @@
 
     <url>
 
+        <loc>https://www.taekwon.eu/</loc>
+
+        <lastmod>2019-11-10</lastmod>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.7</priority>
+
+    </url>
+
+    <url>
+
         <loc>https://www.taekwon.eu/577208/</loc>
 
         <lastmod>2019-11-10</lastmod>
