@@ -39,17 +39,6 @@ body
     justify-content: center;
     grid-template-columns: 25% auto auto 25%;
 
-              /*#kolom1      #kolom2        #kolom3        #kolom4*/
-
-              /*'FirstheaderTag FirstheaderTag FirstheaderTag FirstheaderTag'
-              'FirstheaderTag FirstheaderTag FirstheaderTag FirstheaderTag'
-              'MainheaderTag  MainheaderTag  MainheaderTag  MainheaderTag'
-              'MainsectionTag MainsectionTag MainsectionTag MainsectionTag'
-              'MainarticleTag MainarticleTag MainarticleTag MainarticleTag'
-              ''
-              'section1Tag asideTag';*/
-
-    /*height: 100%; is vier kolommen genoeg?*/
 }
 
 #First-header
@@ -85,7 +74,7 @@ body
 #First-header > h1
 {
     color: #000000;
-    font-family: 'YeonSung', 'Berlin Sans FB', sans-serif; /*HIER een extern font voor gebruiken!*/
+    font-family: 'YeonSung', 'Berlin Sans FB', sans-serif; /*hier is mijn externe font voor het eerst gebruikt*/
     font-size: 2.5em;
     font-weight: bold; /*Ik weet vrij zeker dat dit niets veranderd omdat dit al zo was...*/
 }
